@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-weight: 600;
+}
+
+#main-page {
+  display: flex;
+  height: 100vh;
+}
+
+#side-nav {
+  width: 10%;
+  box-shadow: 6px 0 10px rgba(0, 0, 0, 0.19);
+  background: #fefefe;
+  z-index: 1;
+  color: #333;
+  text-align: center;
+}
+
+#side-nav img {
+  width: 100px;
+}
+
+#side-nav a {
+  display: inline-block;
+  width: 100%;
+  padding: 1.2rem 1rem;
+}
+
+#side-nav a:hover,
+#side-nav a.active {
+  background: rgb(203, 235, 255);
+  border-left: 3px solid rgb(91, 176, 230);
+}
+
+a {
+  color: rgb(87, 87, 87);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+#main-section {
+  left: 8%;
+  width: 100%;
+  background: #fff;
+}
+
+#main-section .header {
+  height: 15vh;
+}
+
+#main-section .section {
+  height: 85vh;
+  background: rgb(240, 240, 241);
+}
+
+#main-section .section .pagi {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+#main-section .section .container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#main-section .section .container input,
+#main-section .section .container p {
+  margin-top: 2rem;
+}
+
+#main-section .section .container input[type="text"] {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+}
+
+#main-section .section .container .btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+#main-section .section .container .btn-wrapper .btn {
+  border: none;
+  color: #333;
+  background-color: white;
+  padding: 4rem 3rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+#main-section .section .container .btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  opacity: 0;
+}
