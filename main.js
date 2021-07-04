@@ -14,3 +14,5 @@ function showSection(e, selectContent) {
   document.getElementById(selectContent).style.display = "block";
   e.currentTarget.className += " active";
 }
+
+document.getElementById("default").click();
